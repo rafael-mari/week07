@@ -12,7 +12,7 @@ int main(void){
   scanf("%d", &mon);
 
   qrt=trunc(mon/25);
-	dim=trunc((mon-qrt*25)/10);
+  dim=trunc((mon-qrt*25)/10);
   nck=trunc((mon-qrt*25-dim*10)/5);
   pen=trunc(mon-qrt*25-dim*10-nck*5);
 
