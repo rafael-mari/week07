@@ -10,7 +10,7 @@ int main(void) {
   if ((score>=0)&&(score<=60))
     printf("You got an F, study harder!\n");
   if ((score>60)&&(score<=70))
-    printf("You got an E, keep working!\n");
+    printf("You got a D, keep working!\n");
   if ((score>70)&&(score<=80))
     printf("You got a C, you can do better.\n");  
   if ((score>80)&&(score<=90))
