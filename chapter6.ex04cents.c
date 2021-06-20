@@ -16,11 +16,7 @@ int main(void){
   nck=trunc((mon-qrt*25-dim*10)/5);
   pen=trunc(mon-qrt*25-dim*10-nck*5);
 
-  printf("You need %d",qrt);
-  printf(" quarter(s), %d",dim);
-  printf(" dime(s), %d",nck);
-  printf(" nickle(s) and %d",pen);
-  printf(" penny(ies).");
+  printf("You need %d quarter(s), %d dime(s), %d nickle(s) and %d penny(ies).",qrt,dim,nck,pen);
 
   return 0;
 }
