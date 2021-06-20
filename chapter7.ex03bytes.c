@@ -29,11 +29,7 @@ int main(void){
   s=trunc(byt-d*960*24*60*60-h*960*60*60-m*960*60)/960; //Another 60 because of the 60 seconds a minute has
 
   //I display the time in days, hours, minutes and seconds
-  printf("It will take %d",d);
-  printf(" day(s), %d",h);
-  printf(" hour(s), %d",m);
-  printf(" minute(s) and %d",s);
-  printf(" second(s).");
+  printf("It takes %d day(s), %d hour(s), %d minute(s) and %d second(s).",d,h,m,s);
 
   return 0;
 }
