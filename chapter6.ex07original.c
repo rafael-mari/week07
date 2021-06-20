@@ -30,22 +30,16 @@ int main(void){
   printf("Enter the y coordinate of the second point.\n");
   scanf("%f",&y2);
 
-  m=(y2-y1)/(x2-x1);
-  sl1=(y2-y1);
-  sl2=(x2-x1);
-  b1=-sl1*x1+sl2*y1;
-  b=-m*x1+y1;
+  m=(y2-y1)/(x2-x1); //slope formula
+  sl1=(y2-y1); //numerator of the slope
+  sl2=(x2-x1); //denominator of the slope
+  b1=-sl1*x1+sl2*y1; //numerator of the b value
+  b=-m*x1+y1; //b cleared
 
   printf("The slope-intercept equation of the line is the following:\n");
-  printf("y=(%d",sl1);
-  printf("/%d",sl2);
-  printf(")x+(%d",b1);
-  printf("/%d",sl2);
-  printf(")\n");
+  printf("y=(%d/%d)x+(%d/%d)\n",sl1,sl2,b1,sl2);
   printf("Or in decimals:\n");
-  printf("y=(%.3f",m);
-  printf(")x+(%.3f",b);
-  printf(")");
+  printf("y=(%.3f)x+(%.3f)",m,b);
 
   return 0;
 }
