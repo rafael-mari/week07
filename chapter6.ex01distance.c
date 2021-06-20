@@ -19,11 +19,10 @@ int main(void){
   printf("Enter the y coordinate of the second point.\n");
   scanf("%f",&y2);
 
-  d=sqrt((x2-x1)*(x2-x1)+(y1-y2)*(y2-y1));
+  d=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 
   printf("The distance between the 2 points is equal to %f",d);
   printf(" units.");
 
   return 0;
-
 }
