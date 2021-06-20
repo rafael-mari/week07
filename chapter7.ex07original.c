@@ -34,8 +34,8 @@ int main(void) {
   int ju1h, ju1m, ju1s, ju2h, ju2m, ju2s;//time for Jupiter
   float sa1d=1503510000, sa2d=1349820000;//distances for Saturn
   int sa1h, sa1m, sa1s, sa2h, sa2m, sa2s;//time for Saturn
-  float ur1d=3006320000, ur2d=2735000000;//distances for Saturn
-  int ur1h, ur1m, ur1s, ur2h, ur2m, ur2s;//time for Saturn
+  float ur1d=3006320000, ur2d=2735000000;//distances for Uranus
+  int ur1h, ur1m, ur1s, ur2h, ur2m, ur2s;//time for Uranus
   float ne1d=4537040000, ne2d=4459750000;//distances for Neptune
   int ne1h, ne1m, ne1s, ne2h, ne2m, ne2s; //time for Neptune
   float pl1d=7376120000, pl2d=4436750000;//distances for Pluto
