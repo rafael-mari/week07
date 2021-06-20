@@ -1,5 +1,5 @@
 /********************************************************
- * Ex8.2 -- Prime number *
+ * Ex8.2 -- Sum of resistors *
  * *
  * Author: Rafael Marí. *
  * *
