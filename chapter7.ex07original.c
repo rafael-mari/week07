@@ -22,7 +22,7 @@ int main(void) {
   int me, ve, ea, ma, ju, sa, ur, ne, pl; //planets
   float me1, me2, ve1, ve2, ea1, ea2, ma1, ma2, ju1, ju2, sa1, sa2, ur1, ur2, ne1, ne2, pl1, pl2; //time to the sun, 1 stands for the aphelion and 2 for the perihelion
   float c=299792.458;//speed of light in kilometers per second
-  float me1d=69800000, me2d=46000000;//distances in kilometers, 1 is for aphelion and 2 for perihelionfor Mercury
+  float me1d=69800000, me2d=46000000;//distances in kilometers, 1 is for aphelion and 2 for perihelion for Mercury
   int me1h, me1m, me1s, me2h, me2m, me2s;//time in hours, minutes and seconds for aphelion (1) and perihelion (2) for Mercury
   float ve1d=108940000, ve2d=107480000;//distances for Venus
   int ve1h, ve1m, ve1s, ve2h, ve2m, ve2s; //time for Venus
