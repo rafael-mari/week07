@@ -38,41 +38,31 @@ int main(void){
     printf("Enter the miles\n"); //They input the miles
     scanf("%f",&ml); //I read the miles
     km=ml*1.60935; //I do the conversion
-    printf("%.3f",ml);
-    printf(" miles is equal to %.3f",km);
-    printf(" kilometers."); //I show the result in km
+    printf("%.3f miles is equal to %.3f kilometers.",ml,km); //I show the result in km
   }
   else if (x==2){ //if x is 2 instead, I do the following:
     printf("Enter the gallons\n"); //They input the gallons
     scanf("%f",&gl); //I read the gallons
     lt=gl*3.78541; //I do the conversion
-    printf("%.3f",gl);
-    printf(" gallons is equal to %.3f",lt);
-    printf(" liters."); //I show the result in liters  
+    printf("%.3f gallons is equal to %.3f liters.",gl,lt); //I show the result in liters  
   }
   else if (x==3){ //if x is 3 instead, I do the following:
     printf("Enter the inches\n"); //They input the inches
     scanf("%f",&inc); //I read the inches
     cm=inc*2.54; //I do the conversion
-    printf("%.3f",inc);
-    printf(" inches is equal to %.3f",cm);
-    printf(" centimeters."); //I show the result in centimeters  
+    printf("%.3f inches is equal to %.3f centimeters.",inc,cm); //I show the result in centimeters  
   }
   else if (x==4){ //if x is 4 instead, I do the following:
     printf("Enter the feet\n"); //They input the feet
     scanf("%f",&ft); //I read the feet
     mt=ft*0.3048; //I do the conversion
-    printf("%.3f",ft);
-    printf(" feet is equal to %.3f",mt);
-    printf(" meters."); //I show the result in meters  
+    printf("%.3f feet is equal to %.3f meters.",ft,mt); //I show the result in meters  
   }
   else if (x==5){ //if x is 5 instead, I do the following:
     printf("Enter the pounds\n"); //They input the pounds
     scanf("%f",&pd); //I read the pounds
     kg=pd*0.453592; //I do the conversion
-    printf("%.3f",pd);
-    printf(" pounds is equal to %.3f",kg);
-    printf(" kilograms."); //I show the result in kilograms  
+    printf("%.3f pounds is equal to %.3f",pd,kg); //I show the result in kilograms  
   }
 
 return 0;
