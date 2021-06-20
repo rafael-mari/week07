@@ -19,14 +19,16 @@ int main(void){
   int m; //minutes
   int s; //seconds
 
-  printf("Enter the size of the file in bytes.\n");
-  scanf("%d",&byt);
+  printf("Enter the size of the file in bytes.\n"); //I ask for the amount of bytes
+  scanf("%d",&byt); //I read the amount of bytes
 
-  d=trunc(byt/(960*24*60*60));
-  h=trunc((byt-d*960*24*60*60)/(960*60*60));
-  m=trunc((byt-d*960*24*60*60-h*960*60*60)/(960*60));
-  s=trunc(byt-d*960*24*60*60-h*960*60*60-m*960*60)/960;
+  //trunc is to divide a number but the result is an integer
+  d=trunc(byt/(960*24*60*60)); //960 because the transmission line transmits 960 characters per second
+  h=trunc((byt-d*960*24*60*60)/(960*60*60)); //24 because of the 24 hours
+  m=trunc((byt-d*960*24*60*60-h*960*60*60)/(960*60)); //60 because of the sixty minutes an hour has
+  s=trunc(byt-d*960*24*60*60-h*960*60*60-m*960*60)/960; //Another 60 because of the 60 seconds a minute has
 
+  //I display the time in days, hours, minutes and seconds
   printf("It will take %d",d);
   printf(" day(s), %d",h);
   printf(" hour(s), %d",m);
