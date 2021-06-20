@@ -7,6 +7,9 @@
  * *
  * Usage: *
  * Run the program, enter the number of the planet, and it will appear the time it takes. *
+ * *
+ * Comments: 
+ * I found the values of the aphelion and perihelion of each planet on this page: http://www.astronoo.com/es/articulos/caracteristicas-de-los-planetas.html *
  ********************************************************/
 
 #include <stdlib.h>
