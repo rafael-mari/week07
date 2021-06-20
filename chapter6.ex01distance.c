@@ -21,8 +21,7 @@ int main(void){
 
   d=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 
-  printf("The distance between the 2 points is equal to %f",d);
-  printf(" units.");
+  printf("The distance between the 2 points is equal to %.3f units.",d);
 
   return 0;
 }
