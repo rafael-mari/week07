@@ -3,7 +3,7 @@
  * *
  * Author: Rafael Marí. *
  * *
- * Purpose: Compute a program that displays how much it takes sunlight to reach a planet that the user selects. *
+ * Purpose: Compute a program that displays how much it takes sunlight to reach a planet that the user selects and show the result in hours, minutes and seconds. *
  * *
  * Usage: *
  * Run the program, enter the number of the planet, and it will appear the time it takes. *
