@@ -52,76 +52,76 @@ int main(void) {
 
   //Convert the total seconds into hours, minutes and seconds for every planet
   me1=me1d/c, me2=me2d/c;
-  me1h=trunc(me1/3600);
-	me1m=trunc((me1-me1h*3600)/60);
-  me1s=trunc((me1-me1h*3600-me1m*60));
-  me2h=trunc(me2/3600);
-	me2m=trunc((me2-me2h*3600)/60);
-  me2s=trunc((me2-me2h*3600-me2m*60));
+    me1h=trunc(me1/3600);
+    me1m=trunc((me1-me1h*3600)/60);
+    me1s=trunc((me1-me1h*3600-me1m*60));
+    me2h=trunc(me2/3600);
+    me2m=trunc((me2-me2h*3600)/60);
+    me2s=trunc((me2-me2h*3600-me2m*60));
 
   ve1=ve1d/c, ve2=ve2d/c;
-  ve1h=trunc(ve1/3600);
-	ve1m=trunc((ve1-ve1h*3600)/60);
-  ve1s=trunc((ve1-ve1h*3600-ve1m*60));
-  ve2h=trunc(ve2/3600);
-	ve2m=trunc((ve2-ve2h*3600)/60);
-  ve2s=trunc((ve2-ve2h*3600-ve2m*60));
+    ve1h=trunc(ve1/3600);
+    ve1m=trunc((ve1-ve1h*3600)/60);
+    ve1s=trunc((ve1-ve1h*3600-ve1m*60));
+    ve2h=trunc(ve2/3600);
+    ve2m=trunc((ve2-ve2h*3600)/60);
+    ve2s=trunc((ve2-ve2h*3600-ve2m*60));
 
   ea1=ea1d/c, ea2=ea2d/c;
-  ea1h=trunc(ea1/3600);
-	ea1m=trunc((ea1-ea1h*3600)/60);
-  ea1s=trunc((ea1-ea1h*3600-ea1m*60));
-  ea2h=trunc(ea2/3600);
-	ea2m=trunc((ea2-ea2h*3600)/60);
-  ea2s=trunc((ea2-ea2h*3600-ea2m*60));
+    ea1h=trunc(ea1/3600);
+    ea1m=trunc((ea1-ea1h*3600)/60);
+    ea1s=trunc((ea1-ea1h*3600-ea1m*60));
+    ea2h=trunc(ea2/3600);
+    ea2m=trunc((ea2-ea2h*3600)/60);
+    ea2s=trunc((ea2-ea2h*3600-ea2m*60));
 
   ma1=ma1d/c, ma2=ma2d/c;
-  ma1h=trunc(ma1/3600);
-	ma1m=trunc((ma1-ma1h*3600)/60);
-  ma1s=trunc((ma1-ma1h*3600-ma1m*60));
-  ma2h=trunc(ma2/3600);
-	ma2m=trunc((ma2-ma2h*3600)/60);
-  ma2s=trunc((ma2-ma2h*3600-ma2m*60));
+    ma1h=trunc(ma1/3600);
+    ma1m=trunc((ma1-ma1h*3600)/60);
+    ma1s=trunc((ma1-ma1h*3600-ma1m*60));
+    ma2h=trunc(ma2/3600);
+    ma2m=trunc((ma2-ma2h*3600)/60);
+    ma2s=trunc((ma2-ma2h*3600-ma2m*60));
 
   ju1=ju1d/c, ju2=ju2d/c;
-  ju1h=trunc(ju1/3600);
-	ju1m=trunc((ju1-ju1h*3600)/60);
-  ju1s=trunc((ju1-ju1h*3600-ju1m*60));
-  ju2h=trunc(ju2/3600);
-	ju2m=trunc((ju2-ju2h*3600)/60);
-  ju2s=trunc((ju2-ju2h*3600-ju2m*60));
+    ju1h=trunc(ju1/3600);
+    ju1m=trunc((ju1-ju1h*3600)/60);
+    ju1s=trunc((ju1-ju1h*3600-ju1m*60));
+    ju2h=trunc(ju2/3600);
+    ju2m=trunc((ju2-ju2h*3600)/60);
+    ju2s=trunc((ju2-ju2h*3600-ju2m*60));
 
   sa1=sa1d/c, sa2=sa2d/c;
-  sa1h=trunc(sa1/3600);
-	sa1m=trunc((sa1-sa1h*3600)/60);
-  sa1s=trunc((sa1-sa1h*3600-sa1m*60));
-  sa2h=trunc(sa2/3600);
-	sa2m=trunc((sa2-sa2h*3600)/60);
-  sa2s=trunc((sa2-sa2h*3600-sa2m*60));
+    sa1h=trunc(sa1/3600);
+    sa1m=trunc((sa1-sa1h*3600)/60);
+    sa1s=trunc((sa1-sa1h*3600-sa1m*60));
+    sa2h=trunc(sa2/3600);
+    sa2m=trunc((sa2-sa2h*3600)/60);
+    sa2s=trunc((sa2-sa2h*3600-sa2m*60));
 
   ur1=ur1d/c, ur2=ur2d/c;
-  ur1h=trunc(ur1/3600);
-	ur1m=trunc((ur1-ur1h*3600)/60);
-  ur1s=trunc((ur1-ur1h*3600-ur1m*60));
-  ur2h=trunc(ur2/3600);
-	ur2m=trunc((ur2-ur2h*3600)/60);
-  ur2s=trunc((ur2-ur2h*3600-ur2m*60));
+    ur1h=trunc(ur1/3600);
+    ur1m=trunc((ur1-ur1h*3600)/60);
+    ur1s=trunc((ur1-ur1h*3600-ur1m*60));
+    ur2h=trunc(ur2/3600);
+    ur2m=trunc((ur2-ur2h*3600)/60);
+    ur2s=trunc((ur2-ur2h*3600-ur2m*60));
 
   ne1=ne1d/c, ne2=ne2d/c;
-  ne1h=trunc(ne1/3600);
-	ne1m=trunc((ne1-ne1h*3600)/60);
-  ne1s=trunc((ne1-ne1h*3600-ne1m*60));
-  ne2h=trunc(ne2/3600);
-	ne2m=trunc((ne2-ne2h*3600)/60);
-  ne2s=trunc((ne2-ne2h*3600-ne2m*60));
+    ne1h=trunc(ne1/3600);
+    ne1m=trunc((ne1-ne1h*3600)/60);
+    ne1s=trunc((ne1-ne1h*3600-ne1m*60));
+    ne2h=trunc(ne2/3600);
+    ne2m=trunc((ne2-ne2h*3600)/60);
+    ne2s=trunc((ne2-ne2h*3600-ne2m*60));
 
   pl1=pl1d/c, pl2=pl2d/c;
-  pl1h=trunc(pl1/3600);
-	pl1m=trunc((pl1-pl1h*3600)/60);
-  pl1s=trunc((pl1-pl1h*3600-pl1m*60));
-  pl2h=trunc(pl2/3600);
-	pl2m=trunc((pl2-pl2h*3600)/60);
-  pl2s=trunc((pl2-pl2h*3600-pl2m*60));
+    pl1h=trunc(pl1/3600);
+    pl1m=trunc((pl1-pl1h*3600)/60);
+    pl1s=trunc((pl1-pl1h*3600-pl1m*60));
+    pl2h=trunc(pl2/3600);
+    pl2m=trunc((pl2-pl2h*3600)/60);
+    pl2s=trunc((pl2-pl2h*3600-pl2m*60));
   
   //If they select n option, do the following.
   if (pla==1){
