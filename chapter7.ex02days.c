@@ -9,7 +9,7 @@
  * Run the program, enter the 2 dates and the difference appears. *
  * *
  * Comments: *
- * My code is based on the one of this website: https://www.programmersought.com/article/28854147400/ because even when I was trying I couldn't get it to work. *
+ * My code is based on the one of this website: https://www.programmersought.com/article/28854147400/ because even when I was trying I couldn't make it work. *
  * Also the part of the leap years doesn't work and I couldn't fix it, so it gets the result without taking into consideration the leap years. But the teacher said it was not necessary for now to read the leap year too, so I leave it like that. *
  ********************************************************/
 
