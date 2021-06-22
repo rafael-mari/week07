@@ -27,6 +27,8 @@ int dm[13] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 }; // dm stands for days of
 int dd(struct date s) //dd stands for days until the date entered, and I use this variable to get how many days have passed until that date, starting with the year 0
 {
 	int sum=0;
+	//Determine if it is a leap year but this doesn't works properly, I don't know why
+        //It sums 365 every time instead
 	for (int i = 1; i < s.y; i++) //for years
     if (s.y % 400 == 0){
       sum=sum+366;
