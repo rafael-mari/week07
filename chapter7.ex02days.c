@@ -9,8 +9,8 @@
  * Run the program, enter the 2 dates and the difference appears. *
  * *
  * Comments: *
- * My code is based on the one of this website: https://www.programmersought.com/article/28854147400/ because even when I was trying I couldn't make it work. *
- * Also the part of the leap years doesn't work and I couldn't fix it, so it gets the result without taking into consideration the leap years. But the teacher said it was not necessary for now to read the leap year too, so I leave it like that. *
+ * My code is based on the one of this website: https://www.programmersought.com/article/28854147400/ because even when I was trying I couldn't get it to work. *
+ * Also the part of the leap years doesn't work and I couldn't fix it even though I change it using my previous code about telling if a year is a leap year and I don't know why. So it gets the result without taking into consideration the leap years. But the teacher said it was not necessary for now to read the leap year too, so I leave it like that. *
  ********************************************************/
 
 #include <stdio.h>
@@ -28,11 +28,18 @@ int dd(struct date s) //dd stands for days until the date entered, and I use thi
 {
 	int sum=0;
 	for (int i = 1; i < s.y; i++) //for years
-	{
-		if ((s.y % 4 == 0 && s.y % 100 != 0) || (s.y % 400 == 0))   //Determine if it is a leap year but this doesn't works properly, I don't know why
-			sum += 366;
-		else sum += 365; //It sums 365 every time instead
-	}
+    if (s.y % 400 == 0){
+      sum=sum+366;
+    }
+    else if (s.y % 100 == 0){
+      sum=sum+365;
+    }
+    else if (s.y % 4 == 0){
+      sum=sum+366;
+    }
+    else{
+      sum=sum+365;
+    }
 
 	for (int k = 1; k < s.m; k++) // for months
 		sum += dm[k];
