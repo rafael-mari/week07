@@ -22,7 +22,7 @@ struct date
 	int d; //days
 };
 
-char bvb[100];
+char bvb[100]; //To read up to 100 characters the user enters
 
 int dm[13] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 }; // dm stands for days of the month, and I define how many days each month has, the 0 is because the loop for starts in 0
 
