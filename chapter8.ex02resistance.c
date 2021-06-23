@@ -1,5 +1,5 @@
 /********************************************************
- * Ex8.2 -- Sum of resistors *
+ * Ex8.2 -- Prime number *
  * *
  * Author: Rafael Marí. *
  * *
@@ -18,14 +18,17 @@ int main(void){
   float n;
   float resistor=0;
   float resistance;
+  char bvb[100]; //To read up to 100 characters the user enters
 
   printf("Enter the number of resistors to sum.\n"); //I ask for the number of resistors
-  scanf("%d",&x); //I read the number
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d",&x); //I read the number
 
   for (i=1;i<=x;i++) //I create a loop that won't stop until it reaches the number of resistors the user entered before
   {
     printf("Enter the value in ohms of the resistor %d \n",i); //I ask for the resistors
-    scanf("%f",&n); // I read them
+    fgets(bvb, sizeof(bvb), stdin);
+    sscanf(bvb, "%f",&n); // I read them
     resistor=resistor+(1/n); //I sum the resistors
     if (i==x){
       break;
