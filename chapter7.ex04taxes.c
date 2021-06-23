@@ -15,9 +15,11 @@
 int main(void) {
   float a; // the original ampunt of money
   float b; // the amount of money after taxes
+  char bvb[100]; //To read up to 100 characters the user enters
   
   printf("Enter the original amount of money.\n"); //I ask for the amount of money
-  scanf("%f",&a); // I read the amount provided
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%f",&a); // I read the amount provided
 
   b=a*1.08; //I do the calculations
 
