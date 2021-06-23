@@ -21,14 +21,17 @@ int main(void){
   int c=0;
   int d=0;
   int f=0;
+  char bvb[100]; //To read up to 100 characters the user enters
 
   printf("Enter the number of students in the classroom.\n"); //I ask for the number of students
-  scanf("%d",&x); //I read the number
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d",&x); //I read the number
 
   for (i=1;i<=x;i++) //I create a loop that won't stop until it reaches the number of students the user entered before
   {
     printf("Enter the grade of the student %d \n",i); //I ask for the grades
-    scanf("%f",&num); // I read them
+    fgets(bvb, sizeof(bvb), stdin);
+    sscanf(bvb, "%f",&num); // I read them
 
     if ((num>=90)&&(num<=100)){
     a=a+1; //I sum 1 to the count of students who got an A
