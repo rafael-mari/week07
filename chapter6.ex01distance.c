@@ -9,15 +9,14 @@ int main(void){
   float x2;
   float y2;
   float d;
+  char bvb[100];
 
-  printf("Enter the x coordinate of the first point.\n");
-  scanf("%f",&x1);
-  printf("Enter the y coordinate of the first point.\n");
-  scanf("%f",&y1);
-  printf("Enter the x coordinate of the second point.\n");
-  scanf("%f",&x2);
-  printf("Enter the y coordinate of the second point.\n");
-  scanf("%f",&y2);
+  printf("Enter the x and y coordinates of the first point in this format: (x,y).\n");
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "(%f,%f)",&x1, &y1);
+  printf("Enter the x and y coordinates of the second point in this format: (x,y).\n");
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "(%f,%f)",&x2, &y2);
 
   d=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 
