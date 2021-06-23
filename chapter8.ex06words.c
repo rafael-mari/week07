@@ -14,8 +14,11 @@
 
 int main(void){
   int x, a, b, c;
+  char bvb[100]; //To read up to 100 characters the user enters
+
   printf("Enter a number between 0 and 999.\n");
-  scanf("%d",&x); 
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d",&x); 
   c=(x-x/10*10); //for the units
   b=(x-x/100*100-c)/10; //for the tens
   a=(x-x/1000*1000-b-c)/100; //for the hundreds
