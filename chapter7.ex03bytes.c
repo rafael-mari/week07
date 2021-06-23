@@ -18,7 +18,7 @@ int main(void){
   int h; //hours
   int m; //minutes
   int s; //seconds
-  char bvb[100];
+  char bvb[100]; //To read up to 100 characters the user enters
 
   printf("Enter the size of the file in bytes.\n"); //I ask for the amount of bytes
   fgets(bvb, sizeof(bvb), stdin);
