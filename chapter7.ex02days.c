@@ -62,10 +62,10 @@ int main()
   //I ask for the 2 dates, asking the user to use hyphens so the programs reads them properly
 	printf("Enter closest date in the next format, using hyphens: (yyyy-mm-dd)\n");
 	fgets(bvb, sizeof(bvb), stdin);
-  sscanf(bvb, "%d-%d-%d", &s1.y, &s1.m, &s1.d);
+  	sscanf(bvb, "%d-%d-%d", &s1.y, &s1.m, &s1.d);
 	printf("Enter furthest date in the next format, using hyphens: (yyyy-mm-dd)\n");
 	fgets(bvb, sizeof(bvb), stdin);
-  sscanf(bvb, "%d-%d-%d", &s2.y, &s2.m, &s2.d);
+  	sscanf(bvb, "%d-%d-%d", &s2.y, &s2.m, &s2.d);
 	printf("The difference between these dates is %d days\n", diff( s1,  s2));//It prints the difference between the closest date and the furthest one
 
 	return 0;
