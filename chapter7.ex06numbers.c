@@ -19,14 +19,18 @@ int main(void){
   int pos=0;
   int neg=0;
   int zero=0;
+  char bvb[100]; //To read up to 100 characters the user enters
+
 
   printf("Enter the amount of numbers to tell how many of them are positive and how many negative.\n"); //I ask for the amount of numbers
-  scanf("%d",&x); //I read the amount
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d",&x); //I read the amount
 
   for (i=1;i<=x;i++) //I create a loop that won't stop until it reaches the amount of numbers the user entered before
   {
     printf("Enter the number %d \n",i); //I ask for the numbers
-    scanf("%f",&num); // I read them
+    fgets(bvb, sizeof(bvb), stdin);
+    sscanf(bvb, "%f",&num); // I read them
     if (num>0)
     pos=pos+1; //I sum 1 to the amount of positive numbers if the entered number is positive
     if (num<0)
