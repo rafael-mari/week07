@@ -22,13 +22,15 @@ struct date
 	int d; //days
 };
 
+char bvb[100];
+
 int dm[13] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 }; // dm stands for days of the month, and I define how many days each month has, the 0 is because the loop for starts in 0
 
 int dd(struct date s) //dd stands for days until the date entered, and I use this variable to get how many days have passed until that date, starting with the year 0
 {
 	int sum=0;
-	//Determine if it is a leap year but this doesn't works properly, I don't know why
-        //It sums 365 every time instead
+  //Determine if it is a leap year but this doesn't works properly, I don't know why
+  //It sums 365 every time instead
 	for (int i = 1; i < s.y; i++) //for years
     if (s.y % 400 == 0){
       sum=sum+366;
@@ -59,9 +61,11 @@ int main()
 	struct date s1, s2;
   //I ask for the 2 dates, asking the user to use hyphens so the programs reads them properly
 	printf("Enter closest date in the next format, using hyphens: (yyyy-mm-dd)\n");
-	scanf("%d-%d-%d", &s1.y, &s1.m, &s1.d);
+	fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d-%d-%d", &s1.y, &s1.m, &s1.d);
 	printf("Enter furthest date in the next format, using hyphens: (yyyy-mm-dd)\n");
-	scanf("%d-%d-%d", &s2.y, &s2.m, &s2.d);
+	fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d-%d-%d", &s2.y, &s2.m, &s2.d);
 	printf("The difference between these dates is %d days\n", diff( s1,  s2));//It prints the difference between the closest date and the furthest one
 
 	return 0;
