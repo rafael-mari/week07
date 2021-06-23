@@ -14,10 +14,13 @@
 
 int truth(int numero); // I define variables
 int main(void) {
-  int num; // define the variable number
+int num; // define the variable number
+char bvb[100]; //To read up to 100 characters the user enters
+
 
   printf("Enter a number: \n"); // I ask for the number
-  scanf("%d", &num); // I read the number
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d",&num); // I read the number
   if (truth(num)) { //If the condition described below is reached it is a prime number
     printf("It is a prime number");
   } else {
