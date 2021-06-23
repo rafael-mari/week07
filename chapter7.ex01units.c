@@ -24,7 +24,7 @@ int main(void){
   float ft; //feet
   float kg; //kilograms
   float pd; //pounds
-  char bvb[1000];
+  char bvb[1000]; //To read up to 1000 characters the user enters
 
   //In this section the user chooses what he wants to convert
   printf("Choose what you want to convert.\n");
