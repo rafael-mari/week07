@@ -18,9 +18,11 @@ int main(void){
   int h; //hours
   int m; //minutes
   int s; //seconds
+  char bvb[100];
 
   printf("Enter the size of the file in bytes.\n"); //I ask for the amount of bytes
-  scanf("%d",&byt); //I read the amount of bytes
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d",&byt); //I read the amount of bytes
 
   //trunc is to divide a number but the result is an integer
   d=trunc(byt/(960*24*60*60)); //960 because the transmission line transmits 960 characters per second
