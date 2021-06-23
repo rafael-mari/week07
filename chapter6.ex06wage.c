@@ -6,11 +6,11 @@ int main(void){
   float hw; //hourly wage
   float ww; //weekly wage
   float wwe; //weekly wage with extra hours
+  char bvb[1000];
 
-  printf("Enter the amount of hours the employee worked this week.\n");
-  scanf("%f",&h);
-  printf("Enter the hourly wage the employee gets.\n");
-  scanf("%f",&hw);
+  printf("Enter the amount of hours the employee worked this week and his hourly wage separated by a comma.\n");
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%f,%f",&h, &hw);
   
   ww=hw*h;
   wwe=(hw*40)+(h-40)*(hw)*(1.5);
