@@ -18,14 +18,17 @@ int main(void){
   float n;
   float number=0;
   float average;
+  char bvb[100]; //To read up to 100 characters the user enters
 
   printf("Enter the amount of numbers to get their average.\n"); //I ask for the amount of numbers
-  scanf("%d",&x); //I read the number
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d",&x); //I read the number
 
   for (i=1;i<=x;i++) //I create a loop that won't stop until it reaches the amount of numbers the user entered before
   {
     printf("Enter the number %d \n",i); //I ask for the numbers
-    scanf("%f",&n); // I read them
+    fgets(bvb, sizeof(bvb), stdin);
+    sscanf(bvb, "%f",&n); // I read them
     number=number+n; //I sum the numbers
     if (i==x){
       break;
