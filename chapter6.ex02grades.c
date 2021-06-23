@@ -3,9 +3,11 @@
 
 int main(void) {
   int score;
+  char bvb[100];
 
   printf("Enter the score of the student between 0 and 100.\n");
-  scanf("%d",&score);
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d", &score);
 
   if ((score>=0)&&(score<=60))
     printf("You got an F, study harder!\n");
