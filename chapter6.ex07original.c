@@ -20,15 +20,14 @@ int main(void){
   float m; //slope in decimals
   int b1; //interception in the y axis, numerator
   float b; //interception in the y axis in decimals
+  char bvb[100];
 
-  printf("Enter the x coordinate of the first point.\n");
-  scanf("%f",&x1);
-  printf("Enter the y coordinate of the first point.\n");
-  scanf("%f",&y1);
-  printf("Enter the x coordinate of the second point.\n");
-  scanf("%f",&x2);
-  printf("Enter the y coordinate of the second point.\n");
-  scanf("%f",&y2);
+  printf("Enter the x and y coordinates of the first point separated by a comma.\n");
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%f,%f",&x1, &y1);
+  printf("Enter the x and y coordinates of the second point separated by a comma.\n");
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%f,%f",&x2, &y2);
 
   m=(y2-y1)/(x2-x1); //slope formula
   sl1=(y2-y1); //numerator of the slope
