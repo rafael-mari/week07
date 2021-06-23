@@ -40,13 +40,15 @@ int main(void) {
   int ne1h, ne1m, ne1s, ne2h, ne2m, ne2s; //time for Neptune
   float pl1d=7376120000, pl2d=4436750000;//distances for Pluto
   int pl1h, pl1m, pl1s, pl2h, pl2m, pl2s; //time for Pluto
+  char bvb[100]; //To read up to 100 characters the user enters
 
   printf("Aphelion is the furthest point from the sun to one object that orbits the sun, and Perihelion is the nearest point.\n\n");//Some information
 
   printf("Mercury=1   Venus=2   Earth=3   Mars=4   Jupiter=5   \nSaturn=6   Uranus=7   Neptune=8   Pluto=9\n\n");//The options the user has
 
   printf("Enter the number of the planet you want to know how much it takes the sunlight to reach it.\n");//I ask for the planet
-  scanf("%d",&pla);//The user enters the number of the planet
+  fgets(bvb, sizeof(bvb), stdin);
+  sscanf(bvb, "%d",&pla); //The user enters the number of the planet
   
   me=1, ve=2, ea=3, ma=4, ju=5, sa=6, ur=7, ne=8, pl=9;//I define the number of each planet
 
